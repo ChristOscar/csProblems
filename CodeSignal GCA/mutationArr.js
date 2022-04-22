@@ -15,12 +15,16 @@
 // Code Block 
 
 function solution(n, a) {
-    let h = a.length;
-    let x = 0;
-    let y = 0;
-    
-    for(let i = 0; i < n; i++){
-        console.log(i)
-        return i;
+    const b = [];
+    for(let i = 0; i <n; i++){
+        if (i <= 0) {
+            b[i] =0 + a[i] + a[i+1];
+        } else if (i >= n-1) { 
+            b[i] = a[i-1] + a[i] + 0;
+        } else {
+            b[i] = a[i-1] + a[i] + a[i+1];
+        }
     }
+    console.log(b);
+    return b;
 }
