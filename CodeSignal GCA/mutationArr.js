@@ -16,6 +16,7 @@
 
 function solution(n, a) {
     const b = [];
+    if(n ==1) return a;
     for(let i = 0; i <n; i++){
         if (i <= 0) {
             b[i] =0 + a[i] + a[i+1];
