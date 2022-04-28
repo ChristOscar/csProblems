@@ -12,6 +12,19 @@
 // Code Block
 
 function solution(numbers, left, right) {
-
+    const result = false;
+    const arr = [];
+    for (let i = 0; i < numbers.length; i++){
+        let value = i + 1; 
+        let ans = numbers[i].toFixed(1) / value.toFixed(1)
+        if(ans >= left && ans <= right){
+            arr.push(true);
+        }else {
+            arr.push(false);
+        }
+        // console.log(value)
+        console.log(ans)
+    }
+    return arr;
 }
 
