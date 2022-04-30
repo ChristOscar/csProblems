@@ -32,4 +32,3 @@ function solution(numbers, left, right) {
     return arr;
 }
 
-
