@@ -10,6 +10,10 @@
 // * 
 
 // Code Block
+const numbers = [8, 5, 6, 16, 5];
+const left = 1;
+const right = 3
+
 
 function solution(numbers, left, right) {
     const result = false;
