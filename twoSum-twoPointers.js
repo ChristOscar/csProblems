@@ -21,7 +21,7 @@ let twoSumTwoPointers = (array, target) => {
 
 //   hash table method 
 const nums = [1, 2, 3, 4, 5];
-// const target = 9;
+//const target = 9;
 
 function twoSumHash(nums, target) {
     let indices = {}
@@ -33,3 +33,7 @@ function twoSumHash(nums, target) {
         indices[nums[currentIndex]] = currentIndex
     }
 };
+
+const array = [1,2,3,4,5];
+const target = 3;
+twoSumTwoPointers(array,target);
