@@ -32,3 +32,20 @@ function solution(numbers, left, right) {
     return arr;
 }
 
+// Attempt 2
+function solution(numbers, left, right){
+    let arr = []
+    for(let i = 0; i < numbers.length; i++){
+        let x = numbers[i]/(i + 1)
+        if(left <= x && x <= right){
+            if(Number.isSafeInteger(x)){
+                arr.push(true)
+            } else {
+                arr.push(false)
+            }
+        } else {
+            arr.push(false)
+        }
+    }
+    return arr
+}
