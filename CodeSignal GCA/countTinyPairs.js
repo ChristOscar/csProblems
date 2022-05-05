@@ -29,3 +29,13 @@ function solution(a, b, k) {
   
   return pairs;
 }
+
+// Attempt 2 
+function solution(a, b, k) {
+  const newArr =[]
+  const c = a.reverse()
+  for(let i = 0; i < c.length; i++){
+      newArr.push(parseInt(c[i] + "" + b[i]))
+  }
+return newArr.filter(x => x < k).length
+}
